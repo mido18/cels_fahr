@@ -1,4 +1,7 @@
-Please use ruby 2.2.2
+please view as raw
+https://raw.githubusercontent.com/mido18/cels_fahr/master/README.md
+
+please use ruby 2.2.2
 
 +----------------------+-------+-------+---------+---------+-----+-------+
 | Name                 | Lines |   LOC | Classes | Methods | M/C | LOC/M |
