@@ -9,10 +9,12 @@ class Definition < ActiveRecord::Base
 
 
   private
+  # Check if the base unit's name or alias is in the formula
   def include_unit
     errors.add(:unit, 'full name or alias must be in the text') unless formula.include?(unit.name) or formula.include?(unit.alias)
   end
 
+  # Check if the unit and converted_to unit are not the same
   def unit_and_converted_to_cannot_be_same
     errors.add(:unit, 'and converted to cannot be same') if unit == converted_to
   end

@@ -59,3 +59,4 @@ group :development, :test do
   gem 'database_cleaner'
 end
 
+ruby '2.2.2'
