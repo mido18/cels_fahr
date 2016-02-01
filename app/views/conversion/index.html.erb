@@ -1,0 +1,10 @@
+<h1>Conversion</h1>
+<%= form_tag(convert_path, method: 'get') do %>
+    <% @units.each do |unit| %>
+        <div class="form-group">
+            <%= label_tag unit.name %>
+            <%= text_field_tag unit.name,"#{@results[unit.name.to_sym] unless @results.nil?}", class:'form-control' %>
+        </div>
+    <% end %>
+    <%= submit_tag 'Convert',class: 'btn btn-primary' %>
+<% end %>

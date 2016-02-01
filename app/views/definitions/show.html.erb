@@ -1,0 +1,20 @@
+<h1>Definition</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @definition.unit.name %>
+</p>
+
+<p>
+  <strong>Formula:</strong>
+  <%= @definition.formula %>
+</p>
+
+<p>
+  <strong>Converted to:</strong>
+  <%= @definition.converted_to.name %>
+</p>
+
+<%= link_to 'Edit', edit_definition_path(@definition) %> |
+<%= link_to 'Back', definitions_path %>
